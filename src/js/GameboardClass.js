@@ -1,9 +1,4 @@
-// import {createGrid, columnLabels, rowLabels} from "./grid.js";
-
 const {createGrid, columnLabels, rowLabels} = require('./grid.js')
-// const columnLabels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
-// const rowLabels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// import ships from "./ships.js";
 
 class Gameboard {
     constructor() {
