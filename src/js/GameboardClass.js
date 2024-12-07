@@ -14,15 +14,16 @@ class Gameboard {
 
         const startingPoint = randomCoords.join('')
         let endingPoint = null
+        console.log(randomCoords[1])
 
-        if ((columnLabels.length - columnLabels.indexOf(randomCoords[1])) >= shipToPlace.length) {
+        if ((columnLabels.length - (columnLabels.indexOf(randomCoords[1]) + 1)) >= (shipToPlace.length)) {
             endingPoint = [randomCoords[0], columnLabels[columnLabels.indexOf(randomCoords[1]) + (shipToPlace.length - 1)]].join('')
             shipToPlace.position = [startingPoint, endingPoint]
             this.placedShips = {...this.placedShips, [shipToPlace.type]: shipToPlace}
             return this.placedShips[shipToPlace.type]
-        } else {
-            this.placeShip(shipToPlace)
         }
+
+        return this.placeShip(shipToPlace)
 
     }
 

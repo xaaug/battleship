@@ -16,8 +16,8 @@ describe('GameboardClass', () => {
 
     test('Ships are placed', () => {
         expect(player.placeShip(cruiser)).toEqual(cruiser);
-        expect(player.placeShip(submarine)).toEqual(submarine);
-        expect(player.placeShip(destroyer)).toEqual(destroyer);
+        expect(player.placeShip(aircraftCarrier)).toEqual(aircraftCarrier);
+        expect(player.placeShip(battleship)).toEqual(battleship);
     })
 
     test('Attacks are being received', () => {
